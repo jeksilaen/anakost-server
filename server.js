@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 const express = require('express');
 const mongoose = require('mongoose');
 const router = require('./routes/index');
@@ -11,14 +13,14 @@ app.use(
 )
 
 const PORT = process.env.PORT || 5000;
-const DB_URI = `mongodb+srv://???:???@???`
+// const DB_URI = `mongodb+srv://???:???@???`
 
 app.use(express.urlencoded({ extended: true })); 
 app.use(express.json());
 app.use('/api', router); 
 
 
-mongoose.connect(DB_URI, { useNewUrlParser: true }); 
+mongoose.connect(`mongodb+srv://admin-zacharia:${process.env.DB_PASS}@cluster0.41ndsjl.mongodb.net/anakostDB?retryWrites=true&w=majority`).catch(err => console.log(err));
 mongoose.connection.once('open', () => { 
     console.log('Connected to the Database.');
 });
