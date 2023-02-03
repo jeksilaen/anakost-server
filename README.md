@@ -22,7 +22,7 @@
 | **API**   | [REST API](https://restfulapi.net) |
 | **Database**    | [MongoDB](https://www.mongodb.com)            |
 | **ODM**    | [Mongoose](https://mongoosejs.com)            |
-| **Deploy**    | [Heroku](https://www.heroku.com)        |
+| **Deploy**    | [Railway](https://railway.app)        |
 
 ## Previews :computer:
 
