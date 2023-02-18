@@ -10,7 +10,7 @@
 
 * The backend code for this project is for serving API to handle requests from the frontend.
 
-* It's also responsible for managing database for all CRUD methods.
+* It's also responsible for managing database for all CRUD method.
 
 * Read more about each functionality on the ___usage section___ below!
 
